@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hub - Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        #user-photo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        #user-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #menu {
+            background-color: #f4f4f4;
+            height: 100vh;
+            width: 200px;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #main-content {
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .code-box {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="user-info">
+            <div id="user-photo">
+                <img src="path/to/user-photo.jpg" alt="User Photo">
+            </div>
+            <div>
+                <p>Welcome, John Doe!</p>
+            </div>
+        </div>
+        <div>
+            <strong>Project Hub</strong>
+        </div>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h2>Dashboard</h2>
+
+        <div class="flex-container">
+            <?php
+                // Assume $userCodes is an array of codes uploaded by the user
+                foreach ($userCodes as $code) {
+                    echo '<div class="code-box">' . $code . '</div>';
+                }
+            ?>
+        </div>
+    </div>
+</body>
+</html>
