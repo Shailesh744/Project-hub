@@ -1,7 +1,7 @@
 # Project-hub
 this is 3rd sem final project of igntu bvoc course
 
-#for database connection use mysql in xampp server..
+**#for database connection use mysql in xampp server..**
 #follow this steps
 #-->create a database name- hubdata
 #--> table name -user data
